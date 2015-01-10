@@ -1,0 +1,118 @@
+﻿body {
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    background-color: #141414;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+    -webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+a:hover {
+    font-size: 22px;
+    color: #37a4ff !important;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    color: white;
+    width: 100%;
+    height: 90px;
+    z-index: 9999;
+    background-color: #141414;
+}
+
+.menu {
+    font-weight: bold;
+    width: 30%;
+    position: absolute;
+}
+
+.menu-item {
+    margin-left: 8%;
+    float: left;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+}
+
+.message-container {
+    position: relative;
+    width: 100%;
+    height: 534px;
+}
+
+.message-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.message-mask {
+    position: absolute;
+    z-index: 20;
+    opacity:0.5;
+    filter: alpha(opacity=60);
+    -ms-filter: "alpha( opacity=60 )";
+    background-color: #141414;
+    width: 100%;
+    height: 100%;
+}
+
+.message {
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    text-align: center;
+    padding-top: 250px;
+    color: #37a4ff;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.content-header {
+    width: 100%;
+    color: #37a4ff;
+    background-color: #141414;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 80px;
+}
+
+.clients-container {
+    background-color: white;
+}
+
+.client-item {
+    width: 250px;
+    float: left;
+}
+
+.client-item img {
+    width: 240px;
+}
+
+.last-content {
+    height: 500px;
+}
