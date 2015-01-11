@@ -38,3 +38,11 @@ web.config
 
 # Gemfile.lock
 #Gemfile.lock
+
+# IDEA
+.idea/
+*.iml
+
+# compass
+.sass-cache/
+
