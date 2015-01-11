@@ -84,18 +84,18 @@
  * @param $add_orientation boolean [true|false] add orientation attribute
  *
  *********************************** */
-/* line 6, ../sass/main.scss */
+/* line 7, ../sass/main.scss */
 body {
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
   background-color: #141414;
 }
 
-/* line 11, ../sass/main.scss */
+/* line 12, ../sass/main.scss */
 ul {
   list-style: none;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 p {
   background-color: #141414;
   color: white;
@@ -104,12 +104,12 @@ p {
   margin: 0px;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 h2 {
   margin: 0px;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 a {
   color: white !important;
   text-decoration: none !important;
@@ -117,13 +117,13 @@ a {
   transition: all .3s;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 a:hover {
   font-size: 22px;
   color: #37a4ff !important;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .header {
   position: fixed;
   top: 0px;
@@ -134,34 +134,60 @@ a:hover {
   background-color: #141414;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .menu {
   font-weight: bold;
   width: 30%;
   position: absolute;
 }
 
-/* line 55, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .menu-item {
   margin-left: 8%;
   float: left;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
+.sp-menu {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
+/* line 66, ../sass/main.scss */
+.sp-menu span {
+  display: block;
+  background-color: #37a4ff;
+  width: 22px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+/* line 74, ../sass/main.scss */
+.sp-menu .hide {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 79, ../sass/main.scss */
 .title {
   text-align: center;
   font-size: 56px;
   font-weight: bold;
 }
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  /* line 79, ../sass/main.scss */
+  .title {
+    font-size: 46px;
+  }
+}
 
-/* line 66, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .message-container {
   position: relative;
   width: 100%;
   height: 534px;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .message-video {
   width: 100%;
   height: 100%;
@@ -170,14 +196,14 @@ a:hover {
   padding-top: 75px;
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  /* line 72, ../sass/main.scss */
+  /* line 94, ../sass/main.scss */
   .message-video {
     width: 0%;
     height: 0%;
   }
 }
 
-/* line 84, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .message-mask {
   position: absolute;
   z-index: 20;
@@ -190,7 +216,7 @@ a:hover {
   padding-top: 75px;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .message {
   position: absolute;
   z-index: 30;
@@ -198,36 +224,42 @@ a:hover {
   text-align: center;
   padding-top: 250px;
 }
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  /* line 118, ../sass/main.scss */
+  .message {
+    padding-top: 100px;
+  }
+}
 
-/* line 104, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .message span {
   color: #37a4ff;
   font-weight: bold;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 #message-en {
   font-size: 72px;
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  /* line 109, ../sass/main.scss */
+  /* line 134, ../sass/main.scss */
   #message-en {
     font-size: 24px;
   }
 }
 
-/* line 116, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 #message-ja {
   font-size: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
-  /* line 116, ../sass/main.scss */
+  /* line 141, ../sass/main.scss */
   #message-ja {
     font-size: 12px;
   }
 }
 
-/* line 123, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .content-header {
   width: 100%;
   color: #37a4ff;
@@ -237,29 +269,29 @@ a:hover {
   padding-top: 80px;
 }
 
-/* line 132, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 .clients-container {
   background-color: #141414;
   width: 1100px;
   margin: 0 auto;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .client-item {
   text-align: center;
 }
 
-/* line 142, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .client-item img {
   width: 210px;
 }
 
-/* line 146, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 #contact {
   text-align: center;
 }
 
-/* line 150, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .last-content {
   height: 1000px;
 }

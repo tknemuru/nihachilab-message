@@ -20,6 +20,11 @@
                 <li class="menu-item"><a href="#clients">Clients</a></li>
                 <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="sp-menu">
+                <span class="sp-menu-first"></span>
+                <span class="sp-menu-second"></span>
+                <span class="sp-menu-third"></span>
+            </div>
             <div class="title">28Lab</div>
         </div>
         <div id="hello" class="message-container">
@@ -135,6 +140,13 @@
                 return false;
             });
         });
+
+        $('.sp-menu').click(
+            function() {
+                $('.sp-menu-first').toggle(200);
+                $('.sp-menu-second').toggle(200);
+            }
+        );
     </script>
 </body>
 </html>
