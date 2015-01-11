@@ -8,8 +8,8 @@
     <meta name="description" content="映像会社28Labではあなたが撮影した面白映像を募集しています！ 28Lab is a video clip licensing company based in Tokyo, Japan. "/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./styles/css/main.css" type="text/css" />
-    <script src="app.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./scripts/app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,63 +20,74 @@
                 <li class="menu-item"><a href="#clients">Clients</a></li>
                 <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="title">28Lab</div>
+            <ul class="social-link-container">
+                <li class="social-link-item">
+                    <a href="https://www.youtube.com/user/NihachiLab" target="_blank">YouTube</a>
+                </li>
+                <li class="social-link-item">
+                    <a href="https://www.facebook.com/28lab" target="_blank">Facebook</a>
+                </li>
+            </ul>
             <div class="sp-menu">
                 <span class="sp-menu-first"></span>
                 <span class="sp-menu-second"></span>
                 <span class="sp-menu-third"></span>
             </div>
-            <div class="title">28Lab</div>
         </div>
         <div id="hello" class="message-container">
             <div class="message">
-                <span id="message-en">We launch your video</span><br />
+                <span id="message-en">Launch your video</span><br />
                 <span id="message-ja">日本の映像を世界へ　世界の映像をもっと日本へ</span>
             </div>
             <div class="message-mask"></div>
-            <video class="message-video" autoplay="autoplay" muted="muted" loop="loop" poster="./images/28lab-logo.png">
+            <video class="message-video" autoplay="autoplay" muted="muted" loop="loop" >
+                <source src="./movies/top.mp4">
                 <source src="./movies/top.mov">
             </video>
         </div>
         <div id="about" class="content">
             <h2 class="content-header">About</h2>
-            <p>
-                28Lab is a video clip licensing company based in Tokyo, <br />
-                Japan, founded in 2013 by Kei Oumawatari.<br />
-                After he has worked as a researcher / video contents<br />
-                acquisition for more than 5 years, he has realized only a<br />
-                handful of Japanese videos are marketed outside of<br />
-                Japan, even though there are such a wide variety of<br />
-                great videos.<br />
-                <br />
-                Most Japanese creators have not realized how valuable<br />
-                their contents can be worldwide, and even for few that<br />
-                has realized the value of their contents, language has<br />
-                been a barrier in marketing.<br />
-                <br />
-                We, 28Lab, promise to build a bridge between Japan<br />
-                and the world through great videos.
+            <p class="ja">
+                28Lab(ニハチラボ)は東京に拠点を置く映像会社です。
+                突然ですが、あなたの撮影した映像が売れる事を知っていますか？
+                海外では一般人がスマートフォンなどで撮影した映像の取引市場が成熟しており、
+                たくさんの価値ある映像が世に出ています。
+                一方、日本では市場が未成熟であり、
+                多くの良い映像が埋もれたままになっています。
+                それらのひとつひとつに価値を見い出し、
+                テレビ番組などでの使用が決まった際にはしっかりと対価をお支払いする。
+                28Lab(ニハチラボ)はそういった映像取引のインフラ構築を目指します。
                 <br />
                 <br />
-                <br />
-                28Lab（ニハチラボ）は東京に拠点を置く映像会社です。<br />
-                あなたが撮影した映像が「売れる」事を知っていますか？<br />
-                海外では一般の人がスマートフォンなどで撮った映像が取引される市場があります。<br />
-                しかし、日本ではまだその存在はあまり知られておらず、<br />
-                せっかく良い映像があってもそのままにしておく場合が多いと感じています。<br />
-                <br />
-                それらのひとつひとつに価値を見い出し、<br />
-                テレビ番組などでの使用が決まった際にはしっかりと対価をお支払する。<br />
-                <br />
-                弊社はそういったインフラの構築を目指しています。<br />
+                また、28Lab(ニハチラボ)では日本でのクライアントが少ない海外会社の映像を多数扱っており、
+                日本の映像番組に紹介させて頂いております。
                 <br />
                 <br />
-                その他、海外の映像会社で日本にまだあまりクライアントがいない会社の映像を<br />
-                弊社では扱っており、日本の映像番組に紹介させて頂いています。<br />
-                <br />
-                映像を通して日本と世界を繋ぐ事業がしたいと思っており<br />
-                弊社という箱の中から色々なモノ・コトが生まれればと思っております。<br />
+                映像を通して日本と世界を繋ぎ、28Lab(ニハチラボ)という箱の中から色々なモノ・コトを生み出していきます。
                 <br />
                 そんな思いを込めて、社名にも「ラボ」という単語を使用しています。<br />
+            </p>
+            <br />
+            <br />
+            <p class="en">
+                28Lab is a video clip licensing company based in Tokyo, 
+                Japan, founded in 2013 by Kei Oumawatari.
+                After he has worked as a researcher / video contents
+                acquisition for more than 5 years, he has realized only a
+                handful of Japanese videos are marketed outside of
+                Japan, even though there are such a wide variety of
+                great videos.
+                <br />
+                <br />
+                Most Japanese creators have not realized how valuable
+                their contents can be worldwide, and even for few that
+                has realized the value of their contents, language has
+                been a barrier in marketing.
+                <br />
+                <br />
+                We, 28Lab, promise to build a bridge between Japan
+                and the world through great videos.
             </p>
         </div>
         <section id="clients" class="content">
@@ -123,30 +134,11 @@
         <div id="contact" class="content last-content">
             <h2 class="content-header">Contact</h2>
             <p>
-                info@28lab.com<br />
+                <a href="mailto:info@28lab.com">info@28lab.com</a><br />
                 Tokyo, Japan<br />
             </p>
-            <img src="./images/28lab-logo.png" />
+            <img class="corp-logo" src="./images/28lab-logo.png" />
         </div>
     </div>
-    <script type="text/javascript">
-        $(function () {
-            $('a[href^=#]').click(function () {
-                var speed = 500;
-                var href = $(this).attr("href");
-                var target = $(href == "#" || href == "" ? 'html' : href);
-                var position = target.offset().top;
-                $("html, body").animate({ scrollTop: position }, speed, "swing");
-                return false;
-            });
-        });
-
-        $('.sp-menu').click(
-            function() {
-                $('.sp-menu-first').toggle(200);
-                $('.sp-menu-second').toggle(200);
-            }
-        );
-    </script>
 </body>
 </html>
