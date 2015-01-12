@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>28Lab</title>
-    <meta name="keywords" content="28Lab, ニハチラボ, ハプニング, 動画, 投稿, 映像, 衝撃動画, 衝撃映像, 販売, 面白動画, 面白映像"/>
-    <meta name="description" content="映像会社28Labではあなたが撮影した面白映像を募集しています！ 28Lab is a video clip licensing company based in Tokyo, Japan. "/>
+    <meta name="keywords" content="28Lab, ニハチラボ, ハプニング, 動画, 投稿, 映像, 衝撃動画, 衝撃映像, 販売, 面白動画, 面白映像" />
+    <meta name="description" content="映像会社28Labではあなたが撮影した面白映像を募集しています！ 28Lab is a video clip licensing company based in Tokyo, Japan. " />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./styles/css/main.css" type="text/css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -15,12 +15,11 @@
     <div class="container">
         <div class="header">
             <ul class="menu">
-                <li class="menu-item"><a href="#hello">Hello</a></li>
-                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#about">About us</a></li>
                 <li class="menu-item"><a href="#clients">Clients</a></li>
                 <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="title">28Lab</div>
+            <div class="title"><a href="#hello">28Lab</a></div>
             <ul class="social-link-container">
                 <li class="social-link-item">
                     <a href="https://www.youtube.com/user/NihachiLab" target="_blank">YouTube</a>
@@ -41,37 +40,38 @@
                 <span id="message-ja">日本の映像を世界へ　世界の映像をもっと日本へ</span>
             </div>
             <div class="message-mask"></div>
-            <video class="message-video" autoplay="autoplay" muted="muted" loop="loop" >
+            <video class="message-video" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="./movies/top.mp4">
                 <source src="./movies/top.mov">
             </video>
         </div>
         <div id="about" class="content">
-            <h2 class="content-header">About</h2>
+            <h2 class="content-header">About us</h2>
             <p class="ja">
+                「映像で日本と世界を繋ぐ」<br />
                 28Lab(ニハチラボ)は東京に拠点を置く映像会社です。
-                突然ですが、あなたの撮影した映像が売れる事を知っていますか？
-                海外では一般人がスマートフォンなどで撮影した映像の取引市場が成熟しており、
-                たくさんの価値ある映像が世に出ています。
-                一方、日本では市場が未成熟であり、
-                多くの良い映像が埋もれたままになっています。
+                突然ですが、あなたが撮影した映像が売れる事を知っていますか？
+                海外では一般人がスマートフォンなどで撮影した映像が取引される市場があり、
+                沢山の価値ある映像が世に出ています。
+                一方、日本でその市場は広く認知されておらず、
+                価値ある映像が埋もれたままになっている場合が多いと感じています。
                 それらのひとつひとつに価値を見い出し、
-                テレビ番組などでの使用が決まった際にはしっかりと対価をお支払いする。
-                28Lab(ニハチラボ)はそういった映像取引のインフラ構築を目指します。
+                テレビ番組などで使用が決まった際にはしっかりと対価をお支払いする。
+                弊社はそういった映像取引のインフラ構築を目指します。
                 <br />
                 <br />
-                また、28Lab(ニハチラボ)では日本でのクライアントが少ない海外会社の映像を多数扱っており、
-                日本の映像番組に紹介させて頂いております。
+                また、日本にあまりクライアントがいない海外の映像会社と提携し、
+                日本の映像番組に紹介させて頂いています。
                 <br />
                 <br />
-                映像を通して日本と世界を繋ぎ、28Lab(ニハチラボ)という箱の中から色々なモノ・コトを生み出していきます。
-                <br />
-                そんな思いを込めて、社名にも「ラボ」という単語を使用しています。<br />
+                その他、映像を通して弊社という箱の中から色々なモノ・コトが生まれればと思い、
+                社名に「ラボ」という単語を使用しています。<br />
             </p>
             <br />
             <br />
             <p class="en">
-                28Lab is a video clip licensing company based in Tokyo, 
+                「28Lab will help you find great viral videos from Japan.」<br />
+                28Lab is a video clip licensing company based in Tokyo,
                 Japan, founded in 2013 by Kei Oumawatari.
                 After he has worked as a researcher / video contents
                 acquisition for more than 5 years, he has realized only a
@@ -134,10 +134,20 @@
         <div id="contact" class="content last-content">
             <h2 class="content-header">Contact</h2>
             <p>
-                <a href="mailto:info@28lab.com">info@28lab.com</a><br />
+                mail:<a href="mailto:info@28lab.com">info@28lab.com</a><br />
                 Tokyo, Japan<br />
             </p>
-            <img class="corp-logo" src="./images/28lab-logo.png" />
+            <div>
+                <a href="mailto:info@28lab.com">
+                    <img class="social-logo" src="./images/28lab-logo.png" />
+                </a>
+                <a href="https://www.youtube.com/user/NihachiLab" target="_blank">
+                    <img id="youtube-logo" class="social-logo" src="./images/youtube-logo.png" />
+                </a>
+                <a href="https://www.facebook.com/28lab" target="_blank">
+                    <img class="social-logo" src="./images/fb-logo.png" />
+                </a>
+            </div>
         </div>
     </div>
 </body>

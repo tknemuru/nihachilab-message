@@ -122,17 +122,10 @@ a {
 
 /* line 53, ../sass/main.scss */
 a:hover {
-  font-size: 20px;
   color: #37a4ff !important;
 }
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  /* line 53, ../sass/main.scss */
-  a:hover {
-    font-size: 16px;
-  }
-}
 
-/* line 61, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .header {
   position: fixed;
   top: 0px;
@@ -143,72 +136,82 @@ a:hover {
   background-color: #0f0f0f;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 61, ../sass/main.scss */
+  /* line 57, ../sass/main.scss */
   .header {
     height: 50px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 61, ../sass/main.scss */
+  /* line 57, ../sass/main.scss */
   .header {
     height: 50px;
   }
 }
-/* line 75, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 .header ul {
   z-index: 10;
 }
-/* line 78, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .header li {
   float: left;
   font-weight: bold;
   margin-left: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 78, ../sass/main.scss */
+  /* line 74, ../sass/main.scss */
   .header li {
     float: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 78, ../sass/main.scss */
+  /* line 74, ../sass/main.scss */
   .header li {
     float: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
-  /* line 78, ../sass/main.scss */
+  /* line 74, ../sass/main.scss */
   .header li {
     margin-left: 10px;
   }
 }
+/* line 87, ../sass/main.scss */
+.header li a:hover {
+  font-size: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  /* line 87, ../sass/main.scss */
+  .header li a:hover {
+    font-size: 16px;
+  }
+}
 
-/* line 94, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .menu {
   padding-top: 12px;
-  width: 100%;
+  width: 35%;
   position: absolute;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 94, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   .menu {
     display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 94, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   .menu {
     display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
-  /* line 94, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   .menu {
     padding-left: 1%;
   }
 }
 
-/* line 109, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .title {
   text-align: center;
   font-size: 56px;
@@ -217,26 +220,26 @@ a:hover {
   position: absolute;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 109, ../sass/main.scss */
+  /* line 111, ../sass/main.scss */
   .title {
     font-size: 38px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 109, ../sass/main.scss */
+  /* line 111, ../sass/main.scss */
   .title {
     font-size: 38px;
   }
 }
 
-/* line 123, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .social-link-container {
   position: absolute;
   right: 70px;
   padding-top: 12px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 123, ../sass/main.scss */
+  /* line 125, ../sass/main.scss */
   .social-link-container {
     display: none;
     position: fixed;
@@ -244,14 +247,14 @@ a:hover {
     right: 5px;
     background-color: #0f0f0f;
   }
-  /* line 130, ../sass/main.scss */
+  /* line 132, ../sass/main.scss */
   .social-link-container li {
     line-height: 43px;
     padding-right: 15px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 123, ../sass/main.scss */
+  /* line 125, ../sass/main.scss */
   .social-link-container {
     display: none;
     position: fixed;
@@ -259,14 +262,14 @@ a:hover {
     right: 5px;
     background-color: #0f0f0f;
   }
-  /* line 141, ../sass/main.scss */
+  /* line 143, ../sass/main.scss */
   .social-link-container li {
     line-height: 43px;
     padding-right: 15px;
   }
 }
 
-/* line 151, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .sp-menu {
   display: none;
   position: fixed;
@@ -275,18 +278,18 @@ a:hover {
   height: 25px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 151, ../sass/main.scss */
+  /* line 153, ../sass/main.scss */
   .sp-menu {
     display: inherit;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 151, ../sass/main.scss */
+  /* line 153, ../sass/main.scss */
   .sp-menu {
     display: inherit;
   }
 }
-/* line 164, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .sp-menu span {
   display: block;
   background-color: #37a4ff;
@@ -295,38 +298,38 @@ a:hover {
   margin-bottom: 5px;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .message-container {
   position: relative;
   width: 100%;
   height: 534px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 173, ../sass/main.scss */
+  /* line 175, ../sass/main.scss */
   .message-container {
     height: 100px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 173, ../sass/main.scss */
+  /* line 175, ../sass/main.scss */
   .message-container {
     height: 100px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: portrait) {
-  /* line 173, ../sass/main.scss */
+  /* line 175, ../sass/main.scss */
   .message-container {
     height: 400px;
   }
 }
 @media only screen and (min-width: 855px) and (max-width: 1023px) and (orientation: landscape) {
-  /* line 173, ../sass/main.scss */
+  /* line 175, ../sass/main.scss */
   .message-container {
     height: 400px;
   }
 }
 
-/* line 191, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .message-video {
   width: 100%;
   height: 100%;
@@ -335,31 +338,31 @@ a:hover {
   padding-top: 75px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 191, ../sass/main.scss */
+  /* line 193, ../sass/main.scss */
   .message-video {
     display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 191, ../sass/main.scss */
+  /* line 193, ../sass/main.scss */
   .message-video {
     display: none;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: portrait) {
-  /* line 191, ../sass/main.scss */
+  /* line 193, ../sass/main.scss */
   .message-video {
     padding-top: 10px;
   }
 }
 @media only screen and (min-width: 855px) and (max-width: 1023px) and (orientation: landscape) {
-  /* line 191, ../sass/main.scss */
+  /* line 193, ../sass/main.scss */
   .message-video {
     padding-top: 10px;
   }
 }
 
-/* line 211, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 .message-mask {
   position: absolute;
   z-index: 20;
@@ -372,31 +375,31 @@ a:hover {
   padding-top: 75px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 211, ../sass/main.scss */
+  /* line 213, ../sass/main.scss */
   .message-mask {
     display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 211, ../sass/main.scss */
+  /* line 213, ../sass/main.scss */
   .message-mask {
     display: none;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: portrait) {
-  /* line 211, ../sass/main.scss */
+  /* line 213, ../sass/main.scss */
   .message-mask {
     padding-top: 10px;
   }
 }
 @media only screen and (min-width: 855px) and (max-width: 1023px) and (orientation: landscape) {
-  /* line 211, ../sass/main.scss */
+  /* line 213, ../sass/main.scss */
   .message-mask {
     padding-top: 10px;
   }
 }
 
-/* line 235, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .message {
   position: absolute;
   z-index: 30;
@@ -405,71 +408,71 @@ a:hover {
   padding-top: 250px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 235, ../sass/main.scss */
+  /* line 237, ../sass/main.scss */
   .message {
     padding-top: 50px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 235, ../sass/main.scss */
+  /* line 237, ../sass/main.scss */
   .message {
     padding-top: 50px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: portrait) {
-  /* line 235, ../sass/main.scss */
+  /* line 237, ../sass/main.scss */
   .message {
     padding-top: 140px;
   }
 }
 @media only screen and (min-width: 855px) and (max-width: 1023px) and (orientation: landscape) {
-  /* line 235, ../sass/main.scss */
+  /* line 237, ../sass/main.scss */
   .message {
     padding-top: 140px;
   }
 }
 
-/* line 255, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 .message span {
   color: #37a4ff;
   font-weight: bold;
 }
 
-/* line 260, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 #message-en {
   font-size: 72px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 260, ../sass/main.scss */
+  /* line 262, ../sass/main.scss */
   #message-en {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 260, ../sass/main.scss */
+  /* line 262, ../sass/main.scss */
   #message-en {
     font-size: 24px;
   }
 }
 
-/* line 270, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 #message-ja {
   font-size: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 270, ../sass/main.scss */
+  /* line 272, ../sass/main.scss */
   #message-ja {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 270, ../sass/main.scss */
+  /* line 272, ../sass/main.scss */
   #message-ja {
     font-size: 12px;
   }
 }
 
-/* line 280, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .content-header {
   width: 100%;
   color: #37a4ff;
@@ -479,14 +482,14 @@ a:hover {
   padding-top: 80px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 280, ../sass/main.scss */
+  /* line 282, ../sass/main.scss */
   .content-header {
     font-size: 24px;
     padding-top: 30px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 280, ../sass/main.scss */
+  /* line 282, ../sass/main.scss */
   .content-header {
     font-size: 24px;
     padding-top: 30px;
@@ -494,98 +497,109 @@ a:hover {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 298, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   .content .en {
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 298, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   .content .en {
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 307, ../sass/main.scss */
+  /* line 309, ../sass/main.scss */
   .content .ja {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 307, ../sass/main.scss */
+  /* line 309, ../sass/main.scss */
   .content .ja {
     font-size: 12px;
   }
 }
 
-/* line 318, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .clients-container {
   background-color: #0f0f0f;
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 324, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .client-item {
   text-align: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 324, ../sass/main.scss */
+  /* line 326, ../sass/main.scss */
   .client-item {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 324, ../sass/main.scss */
+  /* line 326, ../sass/main.scss */
   .client-item {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
 }
 
-/* line 336, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 .client-item img {
   width: 97%;
 }
 
-/* line 340, ../sass/main.scss */
+/* line 342, ../sass/main.scss */
 #contact {
   text-align: center;
 }
 
-/* line 344, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 .corp-logo {
-  padding-top: 30px;
   width: 140px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 344, ../sass/main.scss */
+  /* line 346, ../sass/main.scss */
   .corp-logo {
     padding-top: 3px;
     width: 80px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 344, ../sass/main.scss */
+  /* line 346, ../sass/main.scss */
   .corp-logo {
     padding-top: 3px;
     width: 80px;
   }
 }
 
-/* line 357, ../sass/main.scss */
+/* line 358, ../sass/main.scss */
+.social-logo {
+  width: 50px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/* line 364, ../sass/main.scss */
+#youtube-logo {
+  padding-bottom: 5px;
+}
+
+/* line 368, ../sass/main.scss */
 .last-content {
   height: 800px;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
-  /* line 357, ../sass/main.scss */
+  /* line 368, ../sass/main.scss */
   .last-content {
     height: 440px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 854px) and (orientation: landscape) {
-  /* line 357, ../sass/main.scss */
+  /* line 368, ../sass/main.scss */
   .last-content {
     height: 440px;
   }
