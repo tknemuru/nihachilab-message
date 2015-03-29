@@ -8,16 +8,20 @@
     }
     setTestData();
     
+    // 投稿するボタン押下処理
     $('#form-input-container').submit(function (event) {
         event.preventDefault();
 
         var $form = $(this);
-        console.log($form.serialize());
+        var idKey = nihachilab.config.queryString.agreementedId;
+        var data = $form.serialize();
+        data += '&' + idKey + '=' + nihachilab.urlHelper.getParam(idKey);
+        console.log(data);
 
         $.ajax({
-            url: $form.attr('action'),
+            url: nihachilab.config.api.baseUrl,
             type: $form.attr('method'),
-            data: $form.serialize(),
+            data: data,
             timeout: 10000,
             success: function(result, textStatus, xhr) {
                 console.log(result);

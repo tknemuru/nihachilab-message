@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./styles/css/main.css" type="text/css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./scripts/config.js"></script>
+    <script src="./scripts/helpers/url-helper.js"></script>
     <script src="./scripts/sell-videos.js"></script>
 </head>
 <body>
@@ -30,8 +32,8 @@
         </div>
         <div style="padding-top: 140px;"></div>
         <div id="form-container" class="center">
-            <div class="button center">戻る</div>
-            <form accept-charset="UTF-8" id="form-input-container" action="//192.168.33.10:5000/" class="center" method="post">
+            <a href="/sell_agreement.html"><div class="button center">戻る</div></a>
+            <form accept-charset="UTF-8" id="form-input-container" class="center" method="post">
                 <label for="seller-name" class="required">
                     お名前
                 </label>
