@@ -35,23 +35,23 @@
                 <label for="seller-name" class="required">
                     お名前
                 </label>
-                <input aria-required="true" id="seller-name" name="sellerName" class="text-input" required="required" type="text" />
+                <input aria-required="true" id="seller-name" name="sellerName" class="text-input" required="required" maxlength="40" type="text" />
                 <label for="seller-email" class="required">
                     メールアドレス
                 </label>
-                <input aria-required="true" id="seller-email" name="sellerEmail" class="text-input" type="text" />
+                <input aria-required="true" id="seller-email" name="sellerEmail" class="text-input" required="required" maxlength="255" type="email" />
                 <label for="seller-phone-number">
                     電話番号
                 </label>
-                <input id="seller-phone-number" class="text-input" name="sellerPhoneNumber" type="text" />
+                <input id="seller-phone-number" class="text-input" name="sellerPhoneNumber" maxlength="40" type="tel" />
                 <label for="video-url">
                     動画URL
                 </label>
-                <input id="video-url" class="text-input" name="videoUrl" type="text" />
+                <input id="video-url" class="text-input" name="videoUrl" maxlength="255" type="text" />
                 <label for="video-explain">
                     動画説明
                 </label>
-                <textarea id="video-explain" name="videoExplain" class="text-input"></textarea>
+                <textarea id="video-explain" name="videoExplain" class="text-input" maxlength="500"></textarea>
                 <div id="submit-padding"></div>
                 <input class="button center" type="submit" value="投稿する">
             </form>
