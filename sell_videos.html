@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>28Lab</title>
+    <meta name="keywords" content="28Lab, ニハチラボ, ハプニング, 動画, 投稿, 映像, 衝撃動画, 衝撃映像, 販売, 面白動画, 面白映像" />
+    <meta name="description" content="映像会社28Labではあなたが撮影した面白映像を募集しています！ 28Lab is a video clip licensing company based in Tokyo, Japan. " />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./styles/css/main.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./scripts/sell-videos.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title"><a href="/">28Lab</a></div>
+            <ul class="social-link-container">
+                <li class="social-link-item">
+                    <a href="https://www.youtube.com/user/NihachiLab" target="_blank">YouTube</a>
+                </li>
+                <li class="social-link-item">
+                    <a href="https://www.facebook.com/28lab" target="_blank">Facebook</a>
+                </li>
+            </ul>
+            <div class="sp-menu">
+                <span class="sp-menu-first"></span>
+                <span class="sp-menu-second"></span>
+                <span class="sp-menu-third"></span>
+            </div>
+        </div>
+        <div style="padding-top: 140px;"></div>
+        <div id="form-container" class="center">
+            <div class="button center">戻る</div>
+            <form accept-charset="UTF-8" id="form-input-container" action="//192.168.33.10:5000/" class="center" method="post">
+                <label for="seller-name" class="required">
+                    お名前
+                </label>
+                <input aria-required="true" id="seller-name" name="sellerName" class="text-input" required="required" type="text" />
+                <label for="seller-email" class="required">
+                    メールアドレス
+                </label>
+                <input aria-required="true" id="seller-email" name="sellerEmail" class="text-input" type="text" />
+                <label for="seller-phone-number">
+                    電話番号
+                </label>
+                <input id="seller-phone-number" class="text-input" name="sellerPhoneNumber" type="text" />
+                <label for="video-url">
+                    動画URL
+                </label>
+                <input id="video-url" class="text-input" name="videoUrl" type="text" />
+                <label for="video-explain">
+                    動画説明
+                </label>
+                <textarea id="video-explain" name="videoExplain" class="text-input"></textarea>
+                <div id="submit-padding"></div>
+                <input class="button center" type="submit" value="投稿する">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
