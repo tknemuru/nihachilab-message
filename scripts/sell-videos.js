@@ -16,7 +16,6 @@
         var idKey = nihachilab.config.queryString.agreementedId;
         var data = $form.serialize();
         data += '&' + idKey + '=' + nihachilab.urlHelper.getParam(idKey);
-        console.log(data);
 
         $.ajax({
             url: nihachilab.config.api.baseUrl,
@@ -24,13 +23,12 @@
             data: data,
             timeout: 10000,
             success: function(result, textStatus, xhr) {
-                console.log(result);
-                alert('send success!');
             },
             error: function(xhr, textStatus, error) {
-                console.log(error);
-                alert('send error!');
             }
         });
+        
+        alert('ご投稿ありがとうございました。');
+        document.location = '/';
     });
 });

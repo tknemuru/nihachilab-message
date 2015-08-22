@@ -200,7 +200,7 @@ a:hover {
 /* line 111, ../sass/main.scss */
 .menu {
   padding-top: 12px;
-  width: 35%;
+  width: 40%;
   position: absolute;
 }
 @media only screen and (min-width: 0px) and (max-width: 599px) and (orientation: portrait) {
@@ -642,6 +642,7 @@ a:hover {
 /* line 409, ../sass/main.scss */
 .center {
   margin: 0 auto;
+  text-align: center;
 }
 
 /* line 413, ../sass/main.scss */
@@ -686,4 +687,12 @@ a:hover {
 /* line 445, ../sass/main.scss */
 #form-container #submit-padding {
   padding-top: 26px;
+}
+
+/* line 450, ../sass/main.scss */
+.wall {
+  background-color: white;
+  color: #0f0f0f;
+  height: 400px;
+  overflow-y: scroll;
 }
