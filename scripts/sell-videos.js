@@ -6,7 +6,7 @@
         $('#video-url').val('http://example.com');
         $('#video-explain').val('これは\r\n動画説明文\r\nのテストです。');
     }
-    setTestData();
+    //setTestData();
     
     // 投稿するボタン押下処理
     $('#form-input-container').submit(function (event) {
