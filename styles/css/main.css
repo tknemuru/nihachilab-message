@@ -645,22 +645,22 @@ a:hover {
   text-align: center;
 }
 
-/* line 413, ../sass/main.scss */
+/* line 414, ../sass/main.scss */
 #form-container {
   width: 280px;
 }
-/* line 415, ../sass/main.scss */
+/* line 416, ../sass/main.scss */
 #form-container label {
   display: block;
   padding-top: 14px;
   padding-bottom: 4px;
 }
-/* line 420, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
 #form-container label.required:after {
   content: " *";
   color: #37a4ff;
 }
-/* line 424, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 #form-container .text-input {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -673,26 +673,58 @@ a:hover {
   padding-left: 5px;
   width: 100%;
 }
-/* line 434, ../sass/main.scss */
+/* line 435, ../sass/main.scss */
 #form-container .text-input:focus {
   outline: 0;
   border: 1px solid;
   border-color: #37a4ff;
   box-shadow: 0 0 0 1pt #37a4ff;
 }
-/* line 441, ../sass/main.scss */
+/* line 442, ../sass/main.scss */
 #form-container #form-input-container {
   padding-top: 26px;
 }
-/* line 445, ../sass/main.scss */
+/* line 446, ../sass/main.scss */
 #form-container #submit-padding {
   padding-top: 26px;
 }
 
-/* line 450, ../sass/main.scss */
+/* line 451, ../sass/main.scss */
 .wall {
-  background-color: white;
-  color: #0f0f0f;
+  background-color: #0f0f0f;
+  color: white;
   height: 400px;
   overflow-y: scroll;
+  border: #37a4ff solid 1px;
+  padding-left: 5px;
+}
+
+/* line 460, ../sass/main.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 464, ../sass/main.scss */
+.loader {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+  position: fixed;
+  top: 38%;
+  left: 38%;
+  display: none;
+}
+
+/*
+  Set the color of the icon
+*/
+/* line 482, ../sass/main.scss */
+svg path,
+svg rect {
+  fill: #37a4ff;
 }

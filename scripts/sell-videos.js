@@ -17,18 +17,25 @@
         var data = $form.serialize();
         data += '&' + idKey + '=' + nihachilab.urlHelper.getParam(idKey);
 
+        // メール送信
+        $(".loader").show();
         $.ajax({
             url: nihachilab.config.api.baseUrl,
             type: $form.attr('method'),
             data: data,
             timeout: 10000,
             success: function(result, textStatus, xhr) {
+                $(".loader").hide();
+                alert('ご投稿ありがとうございました。');
+                document.location = '/';
             },
             error: function(xhr, textStatus, error) {
+                $(".loader").hide();
+                console.log(error);
+                var message = "処理中にエラーが発生しました。時間をおいても解決しない場合は、お手数ですが、" +
+                                    "info@28lab.com にご連絡ください。";
+                alert(message);
             }
         });
-        
-        alert('ご投稿ありがとうございました。');
-        document.location = '/';
     });
 });
