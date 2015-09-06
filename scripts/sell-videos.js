@@ -23,7 +23,7 @@
             url: nihachilab.config.api.baseUrl,
             type: $form.attr('method'),
             data: data,
-            timeout: 10000,
+            timeout: 20000,
             success: function(result, textStatus, xhr) {
                 $(".loader").hide();
                 alert('ご投稿ありがとうございました。');

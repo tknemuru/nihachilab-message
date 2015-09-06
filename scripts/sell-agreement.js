@@ -12,7 +12,7 @@ $(function () {
         $.ajax({
             url: nihachilab.config.api.agreementRegister,
             type: 'GET',
-            timeout: 10000,
+            timeout: 20000,
             success: function(result, textStatus, xhr) {
                 $(".loader").hide();
                 location.href = '/sell_videos.html?' + nihachilab.config.queryString.agreementedId
