@@ -6,6 +6,11 @@
     <meta name="keywords" content="28Lab, ニハチラボ, ハプニング, 動画, 投稿, 映像, 衝撃動画, 衝撃映像, 販売, 面白動画, 面白映像" />
     <meta name="description" content="映像会社28Labではあなたが撮影した面白映像を募集しています！ 28Lab is a video clip licensing company based in Tokyo, Japan. " />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="./styles/css/main.css" type="text/css" />
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./scripts/config.js"></script>
@@ -28,45 +33,30 @@
     </div>
     <div class="container">
         <div class="header">
-            <div class="title"><a href="/">28Lab</a></div>
-            <ul class="social-link-container">
-                <li class="social-link-item">
-                    <a href="https://www.youtube.com/user/NihachiLab" target="_blank">YouTube</a>
-                </li>
-                <li class="social-link-item">
-                    <a href="https://www.facebook.com/28lab" target="_blank">Facebook</a>
-                </li>
-            </ul>
-            <div class="sp-menu">
-                <span class="sp-menu-first"></span>
-                <span class="sp-menu-second"></span>
-                <span class="sp-menu-third"></span>
-            </div>
+            <div class="title col-xs-3"><a href="./">28Lab</a></div>
         </div>
-        <div id="about" class="content">
-            <h2 class="content-header">面白映像・衝撃映像募集！</h2>
+        <div id="about" class="content row">
+            <h2 class="content-header row text-center">面白映像・衝撃映像募集！</h2>
             <p class="ja text-left">
                 28Labではあなたが撮影した面白映像・衝撃映像を募集しています。
-                弊社が持つ世界中のネットワークを生かし、あなたの映像を海外のテレビ番組などに紹介し、
-                使用が確定した際には使用料をお支払いさせて頂いいます。
-                また、投稿者に直接届いた海外からの使用依頼メールにも対応させて頂き、
-                代理での交渉を行ないます。
+                投稿いただいた映像は、弊社が持つ世界中のネットワークを活かし、海外のテレビ番組などに紹介します。
+                また、投稿者に直接届いた海外からの使用依頼メールにも代理で対応・交渉を行います。
+                使用が確定した際には、報酬（使用料）をお支払いします。
             </p>
             <p class="ja text-left">
-                まずはじめに、利用規約をお読みください。
-                利用規約に同意して頂ける場合のみ「利用規約に同意する」のボックスをクリックして、
-                投稿の手順に進んでください。
+                おすすめの映像をお持ちで投稿をご希望される場合は、まずはじめに利用規約をお読みください。
+                利用規約に同意していただける場合のみ「利用規約に同意する」のボックスをクリックして、投稿の手順に進んでください。
             </p>
             <br />
             <p class="ja text-left">
                 【利用規約内での用語の定義】<br />
-                ① 投稿者：当ホームページより②で定義する本著作物を投稿する人を指します。<br />
-                ②本著作物：投稿者が当ホームページより投稿する映像・写真等を指します。<br />
+                ①投稿者：当ホームページより②で定義する本著作物を投稿する人を指します。<br />
+                ②本著作物：投稿者が当ホームページ、もしくはメール・郵送等で投稿する映像・写真等を指します。<br />
             </p>
             <br/>
             <p class="ja text-left">
                 【個人情報の取り扱いについて】<br />
-                頂いた情報は、28Labのスタッフが適切に管理し、以下の利用目的の範囲内で取り扱いします。<br />
+                頂いた情報は、28Labのスタッフが適切に管理し、以下の利用目的の範囲内で取り扱います。<br />
                 ① 投稿者への連絡手段として使用するため。<br />
                 ② 本著作物の各種利用のため。<br />
                 ③ その他、投稿者から得た同意の範囲内で利用すること。<br />
@@ -147,7 +137,10 @@
         <div class="center">
             <input id="agreement" type="checkbox" />利用規約に同意する
         </div>
+        <div class="row-padding row"></div>
         <div id="next-page" class="button center">投稿画面に進む</div>
+        <div class="row-padding row"></div>
+        <div class="row-padding row"></div>
     </div>
 </body>
 </html>

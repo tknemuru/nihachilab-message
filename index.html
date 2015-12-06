@@ -7,6 +7,11 @@
     <meta name="keywords" content="28Lab, ニハチラボ, ハプニング, 動画, 投稿, 映像, 衝撃動画, 衝撃映像, 販売, 面白動画, 面白映像" />
     <meta name="description" content="映像会社28Labではあなたが撮影した面白映像を募集しています！ 28Lab is a video clip licensing company based in Tokyo, Japan. " />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="./styles/css/main.css" type="text/css" />
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./scripts/app.js"></script>
@@ -21,33 +26,47 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="header">
-            <ul class="menu">
+            <div class="title col-xs-3"><a href="#hello">28Lab</a></div>
+            <ul class="menu col-xs-6">
                 <li class="menu-item"><a href="#about">About us</a></li>
+                <li class="menu-item"><a href="#what-we-do">What we do</a></li>
+                <li class="menu-item"><a href="#clip-library">Library</a></li>
                 <li class="menu-item"><a href="#clients">Clients</a></li>
+                <li class="menu-item content-ja"><a href="#post-your-video">Post your Video</a></li>
                 <li class="menu-item"><a href="#contact">Contact</a></li>
-                <li class="menu-item"><a href="/sell_agreement.html">Post your Video</a></li>
             </ul>
-            <div class="title"><a href="#hello">28Lab</a></div>
-            <ul class="social-link-container">
-                <li class="social-link-item">
-                    <a href="https://www.youtube.com/user/NihachiLab" target="_blank">YouTube</a>
-                </li>
-                <li class="social-link-item">
-                    <a href="https://www.facebook.com/28lab" target="_blank">Facebook</a>
-                </li>
-            </ul>
+            <a id="toggle-en" href="#hello"><span class="select-lang col-xs-1 text-center">EN</span></a>
+            <a id="toggle-ja" href="#hello"><span class="select-lang col-xs-1 text-center">JA</span></a>
+            <div class="social-link-container col-xs-2">
+                <div class="social-link-item">
+                    <a href="https://www.facebook.com/28lab" target="_blank">
+                        <img class="social-logo" src="./images/fb-logo.png" />
+                    </a>
+                </div>
+                <div class="social-link-item">
+                    <a href="https://www.youtube.com/user/NihachiLab" target="_blank">
+                        <img id="youtube-logo" class="social-logo" src="./images/youtube-logo.png" />
+                    </a>
+                </div>
+            </div>
             <div class="sp-menu">
                 <span class="sp-menu-first"></span>
                 <span class="sp-menu-second"></span>
                 <span class="sp-menu-third"></span>
             </div>
         </div>
+        <div class="back-image-container">
+            <div class="back-image-mask"></div>
+            <div>
+                <img src="./images/dash-cam-dark.jpg" />
+            </div>
+        </div>
         <div id="hello" class="message-container">
             <div class="message">
-                <span id="message-en">Launch your video</span><br />
-                <span id="message-ja">日本の映像を世界へ　世界の映像をもっと日本へ</span>
+                <span id="message-en">Launch your video</span><br>
+                <span id="message-ja" class="content-ja">日本の映像を世界へ　世界の映像をもっと日本へ</span>
             </div>
             <div class="message-mask"></div>
             <video class="message-video" autoplay="autoplay" muted="muted" loop="loop">
@@ -55,55 +74,139 @@
                 <source src="./movies/top.mov">
             </video>
         </div>
-        <div id="about" class="content">
-            <h2 class="content-header">About us</h2>
-            <p class="ja">
-                <b>映像で日本と世界を繋ぐ</b><br />
-                28Lab(ニハチラボ)は東京に拠点を置く映像会社です。<br />
-                現在、スマートフォンを始めウェアラブルカメラや車載カメラなどの普及で
-                一般人でも手軽に映像が撮影出来るようになっています。
-                これらの映像は、海外で広く取引されており、たくさんの価値ある映像が世に出ています。
-                <br />
-                <br />
-                一方、日本でその市場は広く認知されておらず、
-                価値ある映像が埋もれたままになっている場合が多いと感じています。
-                それらのひとつひとつに価値を見い出し、
-                テレビ番組などで使用が決まった際にはしっかりと対価をお支払いする。
-                弊社はそういった映像取引のインフラ構築を目指しています。
-                <br />
-                <br />
-                また、日本市場にクライアントが少ない海外の映像会社と提携し、
-                主に日本のテレビ番組に紹介させて頂いています。
-                <br />
-                <br />
-                これらに留まらず、映像を通して弊社という箱の中から色々なモノ・コトが生まれればと思い、
+        <section id="about" class="content row">
+            <h2 class="content-header row text-center">About us</h2>
+            <h3 class="content-sub-header row text-center content-ja">映像で日本と世界をつなぐ</h3>
+            <p class="ja content-ja">
+                28Lab(ニハチラボ)は東京に拠点を置く映像会社です。<br>
+                「Viral Video（ヴァイラル・ビデオ）」という言葉をご存知でしょうか。<br>
+                スマートフォンやウェアラブルカメラ、車載カメラなどの普及によって、
+                一般の人々が手軽に映像を撮影出来るようになり、<br>それらをSNSなどで広く配信出来る昨今、
+                その映像の価値が大きく変わってきています。
+                <br>
+                <br>
+                その中でも特にインパクトのある映像、例えば ペットの面白映像や車載カメラでとらえた衝撃の瞬間など、<br>
+                多くの人々の注目を浴び、広く拡散されている映像 = ヴァイラル・ビデオが取引される巨大な市場が、<br>
+                アメリカやイギリスを始めとした海外では広く知られており、沢山の映像が世に出ています。
+                <br>
+                <br>
+                しかし、日本ではその市場はまだまだ小さく、せっかくの価値ある映像が埋もれたままになっているケースが<br>
+                多いように感じています。それは単に市場の問題だけではなく、言葉の壁や著作権など、様々な問題が壁となっています。
+                <br>
+                <br>
+                それらの映像ひとつひとつの価値を最大限に引き出し、世界中に持つネットワークを活かして各提携先に配信。<br>
+                そしてテレビやネットなどで使用された際にはしっかりと報酬のお支払いをします。
+                <br>
+                <br>
+                弊社はそういった市場の構築を目指して2013年に設立されました。
+                <br>
+                <br>
+                その他、日本に市場を持たない海外の映像会社と提携し、日本のメディアと彼らを繋ぐ事業も行なっており、<br>
+                テレビ番組を中心に日本のメディアをより面白いものに出来ればと思っています。
+                <br>
+                <br>
+                これらに留まらず、映像を通して弊社という箱の中から色々なモノ・コトを生み出して行きたいという思いから、<br>
                 社名に「ラボ」という単語を使用しています。
             </p>
-            <br />
-            <br />
-            <p class="en">
-                <b>28Lab will help you find great viral videos from Japan.</b><br />
-                28Lab is a video clip licensing company based in Tokyo,
-                Japan, founded in 2013 by Kei Oumawatari.
-                After he has worked as a researcher / video contents
-                acquisition for more than 5 years, he has realized only a
-                handful of Japanese videos are marketed outside of
-                Japan, even though there are such a wide variety of
-                great videos.
-                <br />
-                <br />
-                Most Japanese creators have not realized how valuable
-                their contents can be worldwide, and even for few that
-                has realized the value of their contents, language has
-                been a barrier in marketing.
-                <br />
-                <br />
-                We, 28Lab, promise to build a bridge between Japan
-                and the world through great videos.
+            <h3 class="content-sub-header row text-center content-en">28Lab becomes a bridge<br>
+            between Japan and the world through great videos.</h3>
+            <p class="en content-en">
+                28Lab is a viral video licensing company based in Tokyo, Japan, founded in 2013 by
+                Kei Oumawatari. Kei, after traveling in Canada and Australia
+                for a year each, has a carrer as a viral video researcher / acquisition manager
+                for 5 years. Then he worked in an agency handling stock photos and videos.
+                He continuously attends to international markets, such as MIPCOM, NATPE, ATF,
+                TIFFCOM, MY CONTENT etc. Through above experience, he gained skills in researching
+                videos, rights acquisition, and knowledge in archiving and copyright laws.
+                <br>
+                <br>
+                While working at agencies above, he realized only a handful of Japanese videos
+                are out in the international market, in spite of great resources of valuable videos
+                waiting to be found. Most of Japanese creators haven't realized how valuable their
+                contents can be. And also realized that the language has been always a barrier in
+                marketing Japanese Market for the clients. Then found out, Japanese Market and
+                the international Market has been distanced for long while.
+                <br>
+                <br>
+                He also found that many of foreign companies are straggling to find clients in Japan,
+                then he started representing their contents to help their sales in Japanese Market.
+                <br>
+                <br>
+                We, 28Lab, promise to become a bridge between Japan and the world through great videos.
             </p>
-        </div>
-        <section id="clients" class="content">
-            <h2 class="content-header">Clients</h2>
+        </section>
+        <section id="what-we-do" class="content row">
+            <h2 class="content-header row text-center">What We Do</h2>
+            <div class="doing-container col-sm-4">
+                <h4 class="text-center content-ja">海外の映像を日本へ</h4>
+                <p class="ja content-ja">
+                    海外のクライアントに向けて、<br>日本の映像を紹介します。
+                    また、撮影者の<br>YouTubeメッセージやブログに届いた<br>海外からの映像使用依頼等の交渉も代行します。
+                </p>
+                <h4 class="text-center content-en">Help clip sales in Japan</h4>
+                <p class="en content-en">
+                    Japanese market is quite unique and is sometimes difficult
+                    to work together because of language and a cultural difference.
+                    <br><br>
+                    We have strong connections with major TV channels in Japan,
+                    also  productions and researching companies who are always
+                    looking for viral videos from all around the world.
+                    <br><br>
+                    We will help pitching your clips to them and help making more sales in Japan.
+                </p>
+            </div>
+            <div class="doing-container col-sm-4">
+                <h4 class="text-center content-ja">日本の映像を海外へ</h4>
+                <p class="ja content-ja">
+                    まだ日本に市場を持たない海外の映像会社と提携し、
+                    日本のクライアントに紹介します。<br>1,000点以上にもなる映像の
+                    一部はYouTube<br>チャンネルで紹介しています。<br>
+                    お探しの映像をご連絡いただければ<br>YouTube未アップの映像からも検索して<br>ご提案します。
+                </p>
+                <h4 class="text-center content-en">Clips from Japan for overseas media</h4>
+                <p class="en content-en">
+                    We represent viral videos from Japan to the international market.
+                    Our videos have been shown in major TV channels worldwide,
+                    such as Discovery Channel, MTV, Channel 4 etc...
+                    28lab takes away the language barriers by negotiating as a representative
+                    of rights holders or clients.
+                </p>
+            </div>
+            <div class="doing-container col-sm-4">
+                <h4 class="text-center content-ja">海外映像の許可取り</h4>
+                <p class="ja content-ja">
+                    フランスのMIPCOMやシンガポールのATFなど、<br>世界中の映像見本市に足を運び培ったネットワークを<br>活かし、権利元が分からない映像のリサーチをします。
+                </p>
+                <h4 class="text-center content-en">Research &amp; Sourcing</h4>
+                <p class="en content-en">
+                    When you find great viral videos from Japan but no idea who to contact,
+                    please contact us. We help you searching for original rights holders,
+                    find their contact, and negotiate if needed.
+                </p>
+            </div>
+        </section>
+        <section id="clip-library" class="content row">
+            <h2 class="content-header row text-center">Clip library</h2>
+            <p class="ja content-ja">
+                弊社の映像の多くは、YouTubeでご覧いただく事が可能です。<br>
+                ただし、数が多く、非公開の映像も多数扱っているため、<br>お探しの映像がある場合は一度ご連絡ください。<br>
+                弊社Youtubeチャンネルは右のアイコンからご覧いただけます。<br><br>
+                また、以下は弊社の映像の一部を短くまとめた映像です。参考までにご覧下さい。（音量にご注意ください）
+            </p>
+            <p class="en content-en">
+                Please check our You Tube channel to see what we have from Japan and also
+                what type of clips are popular in Japanese Market.
+            </p>
+            <div class="row-padding row"></div>
+            <div class="video-container col-sm-offset-2 col-sm-4 text-center">
+                <iframe class="video-frame" src="//www.youtube.com/embed/rs8KWxunhs0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container col-sm-4 text-center">
+                <iframe class="video-frame" src="//www.youtube.com/embed/a1ELE6krvMc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="clients" class="content row">
+            <h2 class="content-header row text-center">Clients</h2>
             <table class="clients-container">
                 <tbody>
                     <tr>
@@ -140,17 +243,44 @@
                             <img src="./images/skype.jpg" />
                         </td>
                     </tr>
+                    <tr>
+                        <td class="client-item">
+                            <img src="./images/youku.jpg" />
+                        </td>
+                        <td class="client-item">
+                            <img src="./images/ch5.jpg" />
+                        </td>
+                        <td class="client-item">
+                            <img src="./images/sbs-korea.jpg" />
+                        </td>
+                        <td class="client-item">
+                            <img src="./images/channel-4.jpg" />
+                        </td>
+                        <td class="client-item">
+                            <img src="./images/cbs.jpg" />
+                        </td>
+                    </tr>
                 </tbody>
             </table>
+        </section>
+        <section id="post-your-video" class="content row content-ja">
+            <h2 class="content-header row text-center">Post your video</h2>
+            <p class="ja">
+                28Labではあなたが撮影した面白映像・衝撃映像を募集しています。<br>
+                投稿いただいた映像は、弊社が持つ世界中のネットワークを活かし、海外のテレビ番組などに紹介します。<br>
+                また、投稿者に直接届いた海外からの使用依頼メールにも代理で対応・交渉を行います。<br>
+                おすすめの映像をお持ちで投稿をご希望される場合は、以下のボタンから投稿ページへお進みください。
+            </p>
+            <div class="row-padding row"></div>
+            <div id="next-page" class="button center" onclick="location.href='./sell_agreement.html';">投稿ページへ</div>
         </section>
         <div id="contact" class="content last-content">
             <h2 class="content-header">Contact</h2>
             <p>
-                <a href="mailto:info@28lab.com">info@28lab.com</a><br />
-                Tokyo, Japan<br />
+                <a href="mailto:info@28lab.com">info@28lab.com</a><br>
+                Tokyo, Japan<br>
             </p>
-            <div>
-                <img class="social-logo" src="./images/28lab-logo.png" />
+            <div class="row">
                 <a href="https://www.youtube.com/user/NihachiLab" target="_blank">
                     <img id="youtube-logo" class="social-logo" src="./images/youtube-logo.png" />
                 </a>
@@ -159,6 +289,14 @@
                 </a>
             </div>
         </div>
+        <div class="row-padding content-separator row"></div>
+        <div class="row-padding row"></div>
+        <div class="row">
+            <div class="col-sm-offset-5 col-sm-1 text-center"><a class="content-ja" href="./company_profile.html">会社概要</a></div>
+            <div class="col-sm-1 text-center"><a class="content-ja" href="./president_message.html">代表挨拶</a></div>
+            <div class="col-sm-5 text-center">© 2015 by 28Lab</div>
+        </div>
+        <div class="row-padding row"></div>
     </div>
 </body>
 </html>

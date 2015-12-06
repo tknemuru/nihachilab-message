@@ -20,16 +20,32 @@ $CorpThemeColorDeep : #2391eb;
 $CorpThemeBackGroundColor : #0f0f0f;
 
 // 基本フォントサイズ
-$BaseFontSize : 16px;
+$BaseFontSize : 15px;
 
 // 基本フォント色
 $BaseFontColor : white;
 
+// 基本の行間割合
+$BaseLineHeightRate : 1.7;
+
+// bootstrap override
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+// マーカー
+.content-ja {
+}
+
+.content-en {
+}
+
 body {
-    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
-    background-color: $CorpThemeBackGroundColor;
+    font-family: arial black, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
     font-size: $BaseFontSize;
     color: $BaseFontColor;
+    background-color: $CorpThemeBackGroundColor;
 }
 
 input {
@@ -47,11 +63,10 @@ ul {
 }
 
 p {
-    background-color: $CorpThemeBackGroundColor;
     max-width: 910px;
     text-align: center;
     margin: 0 auto;
-    line-height: $BaseFontSize * 2;
+    line-height: $BaseFontSize * $BaseLineHeightRate;
     letter-spacing: 1px;
 }
 
@@ -80,7 +95,7 @@ a:hover {
     @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
         height: 50px;
     }
-    height: 75px;
+    height: 70px;
     z-index: 9999;
     background-color: $CorpThemeBackGroundColor;
     ul {
@@ -99,12 +114,13 @@ a:hover {
             margin-left: 10px;
         }
         margin-left: 20px;
-        a:hover {
-            @include mq-custom(0px, $StandardTabletWidth) {
-                font-size: 16px;
-            }
-            font-size: 20px;
-        }
+    }
+    .social-link-item {
+        float: left;
+        padding-top: 16px;
+    }
+    .select-lang {
+        padding-top: 38px;
     }
 }
 
@@ -115,30 +131,27 @@ a:hover {
     @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
         display: none;
     }
-    @include mq-custom(0px, $StandardTabletWidth) {
-        padding-left: 1%;
-    }
-    padding-top: 12px;
-    width: 40%;
-    position: absolute;
+    padding-top: 38px;
+}
+
+.back-image-container {
+    position: fixed;
+    z-index: -2;
 }
 
 .title {
-    text-align: center;
     @include mq-custom(0px, $MinTabletWidth - 1px, false, portrait) {
         font-size: 38px;
     }
     @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
         font-size: 38px;
     }
-    font-size: 56px;
+    padding-left: 10%;
+    font-size: 50px;
     font-weight: bold;
-    width: 100%;
-    position: absolute;
 }
 
 .social-link-container {
-    position: absolute;
     @include mq-custom(0px, $MinTabletWidth - 1px, false, portrait) {
         display: none;
         position: fixed;
@@ -161,7 +174,6 @@ a:hover {
         }
         background-color: #0f0f0f;
     }
-    right: 70px;
     padding-top: 12px;
 }
 
@@ -203,6 +215,7 @@ a:hover {
         height: 400px;
     }
     height: 534px;
+    padding-top: 65px;
 }
 
 .message-video {
@@ -222,7 +235,6 @@ a:hover {
     @include mq-custom($MaxMobileHeight + 1px, $StandardTabletWidth - 1, false, landscape) {
         padding-top: 10px;
     }
-    padding-top: 75px;
 }
 
 .message-mask {
@@ -247,6 +259,23 @@ a:hover {
         padding-top: 10px;
     }
     padding-top: 75px;
+}
+
+.back-image-mask {
+    position: absolute;
+    z-index: -1;
+    opacity:0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+    background-color: $CorpThemeBackGroundColor;
+    width: 100%;
+    height: 100%;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .message {
@@ -295,10 +324,7 @@ a:hover {
 }
 
 .content-header {
-    width: 100%;
     color: $CorpThemeColor;
-    background-color: $CorpThemeBackGroundColor;
-    text-align: center;
     @include mq-custom(0px, $MinTabletWidth - 1px, false, portrait) {
         font-size: 24px;
         padding-top: 30px;
@@ -307,8 +333,15 @@ a:hover {
         font-size: 24px;
         padding-top: 30px;
     }
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.content-sub-header {
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .content {
@@ -320,7 +353,7 @@ a:hover {
             font-size: 13px;
         }
     }
-    
+
     .ja {
         @include mq-custom(0px, $MinTabletWidth - 1px, false, portrait) {
             font-size: 12px;
@@ -328,12 +361,19 @@ a:hover {
         @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
             font-size: 12px;
         }
-
     }
 }
 
+.video-frame {
+    width: 100%;
+    height: 311px;
+}
+
+.row-padding {
+    height: 20px;
+}
+
 .clients-container {
-    background-color: $CorpThemeBackGroundColor;
     width: 90%;
     margin: 0 auto;
 }
@@ -348,6 +388,7 @@ a:hover {
         padding-bottom: 0px !important;
     }
     text-align: center;
+    padding-bottom: 6px;
 }
 
 .client-item img {
@@ -387,7 +428,11 @@ a:hover {
     @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
         height: 440px;
     }
-    height: 800px;
+    height: 740px;
+}
+
+.content-separator {
+    border-bottom: thin solid $BaseFontColor;
 }
 
 .button {
