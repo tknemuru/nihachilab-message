@@ -48,6 +48,10 @@ body {
     background-color: $CorpThemeBackGroundColor;
 }
 
+#index-body {
+    background: url(../../images/dash-cam-dark.jpg) center center / cover no-repeat fixed;
+}
+
 input {
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
     font-size: $BaseFontSize;
@@ -214,7 +218,7 @@ a:hover {
     @include mq-custom($MaxMobileHeight + 1px, $StandardTabletWidth - 1, false, landscape) {
         height: 400px;
     }
-    height: 534px;
+    height: 542px;
     padding-top: 65px;
 }
 
@@ -225,10 +229,13 @@ a:hover {
     @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
         display: none;
     }
-    width: 100%;
-    height: 100%;
     position: absolute;
     z-index: 10;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
     @include mq-custom($MinTabletWidth, $StandardTabletWidth - 1, false, portrait) {
         padding-top: 10px;
     }
@@ -250,15 +257,17 @@ a:hover {
     filter: alpha(opacity=50);
     -ms-filter: "alpha( opacity=50 )";
     background-color: $CorpThemeBackGroundColor;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
     @include mq-custom($MinTabletWidth, $StandardTabletWidth - 1, false, portrait) {
         padding-top: 10px;
     }
     @include mq-custom($MaxMobileHeight + 1px, $StandardTabletWidth - 1, false, landscape) {
         padding-top: 10px;
     }
-    padding-top: 75px;
 }
 
 .back-image-mask {
@@ -423,12 +432,12 @@ a:hover {
 
 .last-content {
     @include mq-custom(0px, $MinTabletWidth - 1px, false, portrait) {
-        height: 440px;
+        height: 340px;
     }
     @include mq-custom(0px, $MaxMobileHeight, false, landscape) {
-        height: 440px;
+        height: 340px;
     }
-    height: 740px;
+    height: 340px;
 }
 
 .content-separator {
@@ -476,6 +485,7 @@ a:hover {
         padding-right: 5px;
         padding-left: 5px;
         width: 100%;
+        color: black;
     }
     .text-input:focus {
         outline: 0;
