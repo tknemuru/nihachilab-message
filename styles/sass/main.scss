@@ -42,10 +42,14 @@ $BaseLineHeightRate : 1.7;
 }
 
 body {
-    font-family: arial black, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
     font-size: $BaseFontSize;
     color: $BaseFontColor;
     background-color: $CorpThemeBackGroundColor;
+}
+
+.title,.menu,.select-lang,.message,.content-header {
+    font-family: arial black, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
 }
 
 #index-body {
@@ -74,7 +78,7 @@ p {
     letter-spacing: 1px;
 }
 
-h2 {
+h2,h3 {
     margin: 0px;
 }
 
@@ -125,6 +129,14 @@ a:hover {
     }
     .select-lang {
         padding-top: 38px;
+        color: $CorpThemeColor !important;
+        text-decoration: none !important;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .select-lang:hover {
+        color: $BaseFontColor !important;
     }
 }
 
@@ -178,7 +190,11 @@ a:hover {
         }
         background-color: #0f0f0f;
     }
-    padding-top: 12px;
+    padding-top: 16px;
+}
+
+.social-logo.social-logo-fb {
+    width: 40px;
 }
 
 .sp-menu {
@@ -350,7 +366,10 @@ a:hover {
 .content-sub-header {
     padding-bottom: 30px;
     font-size: 24px;
-    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold
 }
 
 .content {
