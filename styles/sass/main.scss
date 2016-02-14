@@ -56,6 +56,10 @@ body {
     background: url(../../images/dash-cam-dark.jpg) center center / cover no-repeat fixed;
 }
 
+#sell-agreement-body {
+    background: url(../../images/pokke-post-your-video-dark.jpg) center center / cover no-repeat fixed;
+}
+
 input {
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, 'Segoe UI';
     font-size: $BaseFontSize;
@@ -236,6 +240,7 @@ a:hover {
     }
     height: 542px;
     padding-top: 65px;
+    overflow: hidden;
 }
 
 .message-video {
